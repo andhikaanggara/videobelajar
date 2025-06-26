@@ -56,6 +56,7 @@ label {
   font-size: 14px;
   color: #333333ad;
   letter-spacing: 0.2px;
+  margin-bott
 }
 span {
   color: #ff5c2b;
@@ -74,6 +75,37 @@ input {
   margin-bottom: 12px;
   padding: 20px;
 }
+.country-dropdown{
+  display:flex;
+}
+.id-logo{
+  height:48px;
+  padding:12px 10px 0px 12px;
+  border: 1px solid #3a35411f;
+  background: #F4F5FA;
+  border-radius: 6px 0px 0px 6px;
+}
+.country-code{
+  width: 84px;
+  border-radius: 0px 6px 6px 0px;
+  margin-left:-1px;
+}
+.phone-input{
+  display:flex;
+  gap:  24px;
+}
+.input-tel{
+  width:125px
+}
+select {
+  width: 280px;
+  height: 48px;
+  border-radius: 6px;
+  border-width: 1px;
+  border: 1px solid #3a35411f;
+  margin-bottom: 12px;
+  padding: 0 10px;
+}
 .katasandi {
   position: relative;
 }
@@ -87,7 +119,7 @@ input {
   text-align: right;
   margin-bottom: 24px;
 }
-.btn-masuk {
+.btn-daftar {
   height: 34px;
   border: none;
   border-radius: 10px;
@@ -97,7 +129,7 @@ input {
   font-weight: 700;
   cursor: pointer;
 }
-.btn-daftar {
+.btn-masuk {
   height: 34px;
   border: none;
   border-radius: 10px;
@@ -168,5 +200,14 @@ input {
   }
   input {
     width: 550px;
+  }
+  #gender{
+    width:550px;
+  }
+  .country-code{
+    width:123px;
+  }
+  .input-tel{
+    width: 360px
   }
 }

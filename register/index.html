@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resigter page</title>
+    <link rel="stylesheet" href="/register/style.css" />
+    <!-- font dm sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/assets/images/Logo.png" alt="Logo" />
+        </div>
+        <div></div>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <h3>Pendaftaran Akun</h3>
+        <p>Yuk, daftarkan akunmu sekarang juga!</p>
+        <label for="name">Nama Lengkap<span>*</span></label>
+        <input type="text" id="name" />
+        <label for="email">E-mail<span>*</span></label>
+        <input type="email" id="email" />
+        <label for="gender">Jenis Kelamin<span>*</span></label>
+        <select name="gender" id="gender">
+          <option value="wanita">Wanita</option>
+          <option value="laki-laki">Laki-laki</option>
+          <option value="lainnya">Lainnya</option>
+        </select>
+        <label for="no-tel">No. Hp<span>*</span></label>
+        <div class="phone-input">
+          <div class="country-dropdown">
+            <div class="id-logo">
+              <img src="/assets/icons/Indonesia (ID).png" alt="id" />
+            </div>
+            <select name="country-code" id="no-tel" class="country-code">
+              <option value="+62" data-flag="id">+62</option>
+              <option value="+1" data-flag="us">+1</option>
+              <option value="+91" data-flag="in">+91</option>
+              <option value="+44" data-flag="gb">+44</option>
+            </select>
+          </div>
+          <input type="tel" class="input-tel" />
+        </div>
+        <label for="kata-sandi">Kata Sandi <span>*</span></label>
+        <div class="katasandi">
+          <input type="password" id="kata-sandi" />
+          <img src="/assets/icons/eye-off.png" alt="eye-off" />
+        </div>
+        <label for="kata-sandi">Konfirmasi Kata Sandi <span>*</span></label>
+        <div class="katasandi">
+          <input type="password" id="kata-sandi" />
+          <img src="/assets/icons/eye-off.png" alt="eye-off" />
+        </div>
+        <p class="lupapassword">Lupa Password?</p>
+        <button type="submit" class="btn-daftar">Daftar</button>
+        <a href="/login/index.html" class="btn-masuk">
+          <button class="btn-masuk">Masuk</button>
+        </a>
+        <span class="atau"></span>
+        <button class="btn-goggle">
+          <img src="/assets/icons/logos_google-icon.png" alt="logo-goggle" />
+          <span class="text-btn-goggle">Daftar dengan goggle</span>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
