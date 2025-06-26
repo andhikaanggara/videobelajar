@@ -1,0 +1,128 @@
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: dm sans;
+}
+
+/* nav template */
+.navbar {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 120px;
+  border-bottom: 1px solid #3a35411f;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.logo {
+  width: 237px;
+}
+.link {
+  text-decoration: none;
+  font-family: lato;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #333333ad;
+}
+.avatar {
+  width: 44px;
+}
+
+main {
+  background: #fffdf3;
+  padding: 64px 120px;
+}
+
+/* hero section */
+.hero {
+  border: 1px solid;
+  radius: 10px;
+  padding: 82px 140px 64px 140px;
+  gap: 24px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+.hero-text h1 {
+  color: #ffffff;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  margin-bottom: 12px;
+}
+.hero-text p {
+  font-family: DM Sans;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.hero button {
+  width: 369px;
+  height: 42px;
+  background: #3ecf4c;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 26px;
+  color: #ffffff;
+  font-family: dm sans;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* card section */
+.tittle h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  color: #222325;
+}
+.tittle p {
+  font-family: DM Sans;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #333333ad;
+  margin-bottom: 36px
+}
+
+/* menu tab */
+.tab-container{
+}
+.tab{
+  text-decoration: none;
+  color: #333333AD;
+  padding: 12px 36px 12px 0px;
+  width: 700px;
+}
+.selec{
+  color: #F64920;
+}
+.rect{
+  background:red;
+  background: #F64920;
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 360px) {
+}

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: dm sans;
+}
+body {
+  background: #fffdf3;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #3a35411f;
+}
+.navbar .logo img {
+  width: 152px;
+}
+
+/* card login */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 20px;
+  background: #fffdf3;
+}
+form {
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form h3 {
+  font-family: poppins;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400px;
+  padding: 10px;
+  color: #222325;
+}
+form p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333333ad;
+}
+label {
+  font-family: dm sans;
+  font-size: 14px;
+  color: #333333ad;
+  letter-spacing: 0.2px;
+}
+span {
+  color: #ff5c2b;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  padding: 2px;
+}
+input {
+  width: 280px;
+  height: 48px;
+  border-radius: 6px;
+  border-width: 1px;
+  border: 1px solid #3a35411f;
+  margin-bottom: 12px;
+  padding: 20px;
+}
+.katasandi {
+  position: relative;
+}
+.katasandi img {
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
+  cursor: pointer;
+}
+.lupapassword {
+  text-align: right;
+  margin-bottom: 24px;
+}
+.btn-masuk {
+  height: 34px;
+  border: none;
+  border-radius: 10px;
+  background: #3ecf4c;
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-daftar {
+  height: 34px;
+  border: none;
+  border-radius: 10px;
+  background: #e2fcd9cc;
+  margin-bottom: 20px;
+  color: #3ecf4c;
+  font-weight: 700;
+  cursor: pointer;
+}
+.atau {
+  position: relative;
+  text-align: center;
+  height: 24px;
+  margin-bottom: 12px;
+}
+.atau::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  translate: 0 -50%;
+  height: 1px;
+  background: #f1f1f1;
+}
+.atau::after {
+  content: "atau";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background: #ffffff;
+  font-size: 14px;
+  padding: 0 12px;
+  color: #333333ad;
+  font-family: dm sans;
+  font-weight: 500;
+}
+.btn-goggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  height: 42px;
+  cursor: pointer;
+}
+.text-btn-goggle {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #4a505c;
+}
+
+@media (min-width: 768px) {
+  .navbar .logo img {
+    width: 237px;
+  }
+  form {
+    width: 590px;
+  }
+  input {
+    width: 550px;
+  }
+}
