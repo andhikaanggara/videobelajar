@@ -11,11 +11,10 @@ body {
 
 /* nav template */
 .navbar {
-  border: 1px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 120px;
+  padding: 12px 24px;
   border-bottom: 1px solid #3a35411f;
 }
 .nav-right {
@@ -23,8 +22,9 @@ body {
   align-items: center;
   gap: 36px;
 }
+
 .logo {
-  width: 237px;
+  width: 152px;
 }
 .link {
   text-decoration: none;
@@ -39,16 +39,15 @@ body {
 
 main {
   background: #fffdf3;
-  padding: 64px 120px;
+  padding: 28px 20px;
 }
 
 /* hero section */
 .hero {
-  border: 1px solid;
   radius: 10px;
-  padding: 82px 140px 64px 140px;
-  gap: 24px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/hero.jpg");
+  padding: 37px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/assets/images/hero.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -58,34 +57,32 @@ main {
   justify-content: center;
   text-align: center;
   gap: 24px;
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 }
 .hero-text h1 {
   color: #ffffff;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 24px;
   line-height: 110%;
   margin-bottom: 12px;
 }
 .hero-text p {
   font-family: DM Sans;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   letter-spacing: 0.2px;
   color: #ffffff;
 }
 .hero button {
-  width: 369px;
-  height: 42px;
   background: #3ecf4c;
   border-radius: 10px;
   border: none;
-  padding: 10px 26px;
+  padding: 10px 8px;
   color: #ffffff;
   font-family: dm sans;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -93,7 +90,7 @@ main {
 .tittle h1 {
   font-family: Poppins;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 24px;
   color: #222325;
 }
 .tittle p {
@@ -101,28 +98,436 @@ main {
   font-weight: 500;
   letter-spacing: 0.2px;
   color: #333333ad;
-  margin-bottom: 36px
+  margin-bottom: 14px;
 }
 
 /* menu tab */
-.tab-container{
+.tab-container {
+  overflow-x: auto;
+  scrollbar-width: none;
 }
-.tab{
+.menu-class {
+  display: inline-block;
+}
+.tab {
   text-decoration: none;
-  color: #333333AD;
+  color: #333333ad;
   padding: 12px 36px 12px 0px;
   width: 700px;
+  font-size: 14px;
 }
-.selec{
-  color: #F64920;
+.selec {
+  color: #f64920;
 }
-.rect{
-  background:red;
-  background: #F64920;
+.rect {
+  background: red;
+  background: #f64920;
   width: 50px;
   height: 5px;
   border-radius: 10px;
+  margin-top: 12px;
+}
+/* card */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+.card {
+  width: 320px;
+  height: 147px;
+  padding: 16px;
+  border: 1px solid #3a35411f;
+  border-radius: 12px;
+  background: #ffffff;
+  font-family: dm sans;
+  gap: 12px;
+}
+.card-info {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  background: #ffffff;
+  gap: 12px;
+}
+.job-icon {
+  width: 82px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-content {
+  flex: 1;
+}
+.job-title {
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 120%;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+.user-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.company {
+  font-weight: bold;
+}
+.user-role {
+  font-size: 12px;
+  color: #333333ad;
+}
+.rating-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+.stars {
+  color: gold;
+  font-size: 14px;
+}
+.rating-number {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-decoration: underline;
+  color: #333333ad;
+}
+.price {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #3ecf4c;
 }
 
-@media (max-width: 360px) {
+/* banner-cta */
+.banner {
+  radius: 10px;
+  padding: 48px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/assets/images/banner-cta.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner-text h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #c1c2c4;
+  margin-bottom: 4px;
+}
+.banner-text h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.banner-text h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #f4f5fa;
+  margin-bottom: 40px;
+}
+.input-kirim-email {
+  text-align: center;
+  width: 280px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  color: ##b3b3b3;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.btn-subscribe {
+  width: 280px;
+  height: 40px;
+  background: #ffbd3a;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+/* footer */
+.footer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-top: 1px solid #3a35411f;
+}
+.footer-logo img {
+  width: 170px;
+  margin-bottom: 21px;
+}
+#tagline {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #222325;
+}
+.footer-logo p {
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+.footer-links {
+  margin-top: 8px;
+  border-bottom: 1px solid #3a35411f;
+  padding-bottom: 8px;
+}
+.link-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+  border: 1, 5px solid rgba(51, 51, 51, 0.68);
+}
+.footer-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.footer-bottom {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: rgba(58, 53, 65, 0.68);
+}
+
+@media (max-width: 768px) {
+  .link,
+  .avatar {
+    display: none;
+  }
+  .job-caption {
+    display: none;
+  }
+  .caption-hide {
+    display: none;
+  }
+  .di {
+    display: none;
+  }
+  .company {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* navigasi */
+  .logo {
+    width: 237px;
+  }
+  #hamburger {
+    display: none;
+  }
+
+  main {
+    background: #fffdf3;
+    padding: 64px 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .main {
+    max-width: 1220px;
+  }
+
+  .navbar {
+    padding: 12px 120px;
+  }
+
+  /* hero */
+  .hero {
+    padding: 68px 140px;
+  }
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero button {
+    padding: 10px 16px;
+  }
+
+  /* card tttle */
+  .tittle h1 {
+    text-size: 32px;
+  }
+  .tittle p {
+    margin-bottom: 16px;
+  }
+
+  /* tab */
+  .tab {
+    font-size: 16px;
+  }
+
+  /* card */
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 384px;
+    height: 426px;
+    border-radius: 10px;
+  }
+  .card-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .job-icon {
+    width: 344px;
+    height: 193px;
+  }
+  .job-caption {
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #333333ad;
+    margin-bottom: 16px;
+  }
+  .caption-hide {
+    display: none;
+  }
+  .user-info img {
+    height: 40px;
+    width: 40px;
+  }
+  .username {
+    font-size: 16px;
+  }
+  .rating {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 24px;
+  }
+
+  /* banner-cta */
+  .banner {
+    padding: 92px auto;
+    border-radius: 4px;
+  }
+  .banner-cta {
+    max-width: 525px;
+  }
+  .banner-text h2 {
+    font-size: 18px;
+  }
+  .banner-text h1 {
+    font-size: 32px;
+  }
+  .banner-text h3 {
+    font-size: 16px;
+  }
+  .input-kirim-email {
+    width: 524px;
+    height: 58px;
+    padding: 18px 32px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .input-email {
+    position: relative;
+  }
+  .btn-subscribe {
+    position: absolute;
+    right: 2%;
+    bottom: 11%;
+    width: 132px;
+    height: 42px;
+    font-size: 16px;
+}
+/* footer */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    text-align: left;
+  }
+
+  .footer-logo {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+
+  .footer-columns {
+    flex: 1 1 65%;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 65%;
+  }
+
+  .footer-column {
+    min-width: 120px;
+  }
+
+  .footer-social {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+  }
 }
